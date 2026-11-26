@@ -1,0 +1,16 @@
+modules:
+  jira:projectPage:
+    - key: redline-release-evidence
+      resource: main
+      title: REDLINE
+      layout: blank
+resources:
+  - key: main
+    path: ui/dist
+permissions:
+  scopes:
+    - read:jira-work
+app:
+  id: ari:cloud:ecosystem::app/REPLACE_WITH_REGISTERED_APP_ID
+  runtime:
+    name: nodejs22.x
