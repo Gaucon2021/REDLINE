@@ -20,3 +20,9 @@ jobs:
         env:
           QA_PLAYWRIGHT_ROOT: ${{ runner.temp }}/ui-qa
         run: node scripts/ui-smoke.mjs
+      - name: Build Jira Forge Custom UI
+        working-directory: forge/ui
+        run: |
+          npm install --ignore-scripts --package-lock=false --no-audit --no-fund
+          npm run build
+          test -s dist/index.html

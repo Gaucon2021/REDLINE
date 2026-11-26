@@ -7,9 +7,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@forge/bridge": "^5.0.0"
+    "@forge/bridge": "7.4.0"
   },
   "devDependencies": {
-    "vite": "^6.4.0"
+    "vite": "6.4.5"
   }
 }
